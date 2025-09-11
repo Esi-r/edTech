@@ -45,10 +45,10 @@ const AIDemo = () => {
           <Modal open={modalOpen} onOpenChange={setModalOpen}>
             <ModalTrigger asChild>
               <Button 
-                variant="hero" 
+                variant="cta" 
                 size="xl"
                 onClick={handleAnalyze}
-                className="w-full bg-gray-800/90 hover:bg-gray-700 text-white border-0 py-4 text-lg font-semibold"
+                className="w-full bg-[#34D399] hover:bg-[#34D399]/90 text-gray-900 border-0 py-4 text-lg font-semibold"
               >
                 <Sparkles className="w-5 h-5" />
                 Get Feedback from AI

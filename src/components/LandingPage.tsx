@@ -56,7 +56,7 @@ const LandingPage = () => {
           <div className="animate-in fade-in duration-1000 delay-500">
             <div className="max-w-4xl mx-auto space-y-8">
               <div className="text-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+                <h2 className="text-xl md:text-2xl font-semibold text-white mb-3">
                   Try it now! ✨
                 </h2>
                 <p className="text-gray-300 text-lg">
