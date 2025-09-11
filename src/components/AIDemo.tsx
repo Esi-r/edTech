@@ -48,10 +48,9 @@ const AIDemo = () => {
                 variant="cta" 
                 size="xl"
                 onClick={handleAnalyze}
-                className="w-full bg-[#34D399] hover:bg-[#34D399]/90 text-gray-900 border-0 py-4 text-lg font-semibold"
+                className="w-full bg-gradient-primary hover:opacity-90 text-primary-foreground border-0 py-4 text-lg font-semibold transition-all duration-300"
               >
-                <Sparkles className="w-5 h-5" />
-                Get Feedback from AI
+                ✨ Analyze My Sentence
               </Button>
             </ModalTrigger>
             

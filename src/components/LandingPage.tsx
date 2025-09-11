@@ -60,15 +60,12 @@ const LandingPage = () => {
             <div className="max-w-4xl mx-auto space-y-8">
               <div className="text-center">
                 <h2 className="text-xl md:text-2xl font-semibold text-white mb-3">
-                  Try it now! ✨
-                </h2>
-                <p className="text-gray-300 text-lg">
                   Can our AI improve your writing in 15 seconds?
-                </p>
+                </h2>
               </div>
               
-              {/* Clean AI Demo Container */}
-              <div className="glass border border-white/20 rounded-2xl p-8 max-w-3xl mx-auto bg-white/5">
+              {/* Glassmorphism AI Demo Container */}
+              <div className="border border-white/10 rounded-2xl p-8 max-w-3xl mx-auto backdrop-blur-2xl bg-secondary/80 supports-[backdrop-filter]:bg-secondary/80">
                 <AIDemo />
               </div>
             </div>
