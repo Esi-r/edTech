@@ -12,7 +12,7 @@ const Header = () => {
             <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">F</span>
             </div>
-            <span className="text-xl font-bold gradient-text">Fluentli.ai</span>
+            <span className="text-xl font-bold text-foreground">Fluentli.ai</span>
           </div>
 
           {/* Navigation Links */}
