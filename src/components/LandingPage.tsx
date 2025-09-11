@@ -1,0 +1,232 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, X, Check, GraduationCap, Building2 } from "lucide-react";
+import FeatureCard from "./FeatureCard";
+import TestimonialCard from "./TestimonialCard";
+import AIDemo from "./AIDemo";
+import FAQ from "./FAQ";
+
+// Import generated images
+import heroBg from "@/assets/hero-bg.jpg";
+import fatima from "@/assets/testimonial-fatima.jpg";
+import hassan from "@/assets/testimonial-hassan.jpg";
+import microphoneIcon from "@/assets/icon-microphone.png";
+import writingIcon from "@/assets/icon-writing.png";
+import gameIcon from "@/assets/icon-game.png";
+
+const LandingPage = () => {
+  return (
+    <div className="min-h-screen bg-background text-foreground font-inter overflow-x-hidden">
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: `url(${heroBg})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-hero opacity-80" />
+        
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-7xl font-bold font-inter mb-6 gradient-text animate-in fade-in duration-1000">
+            Ace IELTS. Unlock Your World.
+          </h1>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-in fade-in duration-1000 delay-200">
+            The smart, fun AI tutor that adapts to you. Stop guessing, start improving.
+          </p>
+          <div className="space-y-4 animate-in fade-in duration-1000 delay-400">
+            <Button variant="cta" size="xl" className="animate-pulse-glow">
+              Start Your Free Trial
+              <ArrowRight className="w-5 h-5" />
+            </Button>
+            <p className="text-sm text-muted-foreground">
+              ✨ Or try our AI in 15 seconds below!
+            </p>
+          </div>
+        </div>
+        
+        {/* Floating elements */}
+        <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-primary rounded-full opacity-60 animate-float" />
+        <div className="absolute bottom-32 right-16 w-16 h-16 bg-gradient-accent rounded-full opacity-50 animate-float" style={{ animationDelay: "2s" }} />
+        <div className="absolute top-1/3 right-10 w-12 h-12 bg-gradient-primary rounded-full opacity-40 animate-float" style={{ animationDelay: "4s" }} />
+      </section>
+
+      {/* AI Demo Section */}
+      <AIDemo />
+
+      {/* Problem/Solution Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold font-inter text-center mb-16 gradient-text">
+            The IELTS Grind is Over.
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="glass border border-red-500/20 rounded-xl p-8 text-center">
+              <h3 className="text-2xl font-semibold mb-6 text-red-400">The Old Way</h3>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <X className="w-6 h-6 text-red-500 flex-shrink-0" />
+                  <span>Boring Textbooks</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <X className="w-6 h-6 text-red-500 flex-shrink-0" />
+                  <span>Expensive Tutors</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <X className="w-6 h-6 text-red-500 flex-shrink-0" />
+                  <span>Vague Feedback</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="glass border border-accent/30 rounded-xl p-8 text-center">
+              <h3 className="text-2xl font-semibold mb-6 text-accent">The Fluentli.ai Way</h3>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <Check className="w-6 h-6 text-accent flex-shrink-0" />
+                  <span>Fun, Daily AI Tasks</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Check className="w-6 h-6 text-accent flex-shrink-0" />
+                  <span>Your 24/7 AI Tutor</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Check className="w-6 h-6 text-accent flex-shrink-0" />
+                  <span>Instant, Clear Analysis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Feature Showcase */}
+      <section className="py-16 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold font-inter text-center mb-16 gradient-text">
+            Your Personal AI Genie, Unbottled.
+          </h2>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <FeatureCard
+              icon={microphoneIcon}
+              title="Speak with Confidence"
+              description="Practice with our AI 24/7. It analyzes your pronunciation, fluency, and vocabulary with zero judgment."
+            />
+            <FeatureCard
+              icon={writingIcon}
+              title="Write Perfect Essays"
+              description="Our AI checks your writing for grammar, structure, and vocabulary, giving you a detailed report in seconds."
+            />
+            <FeatureCard
+              icon={gameIcon}
+              title="Learn Like You Play"
+              description="Level up your skills with fun, adaptive tasks. Always challenging, never boring."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold font-inter text-center mb-16 gradient-text">
+            From Lagos to Lahore, Students are Winning.
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+            <TestimonialCard
+              content="The AI speaking practice was a game-changer. I went from a 6.0 to a 7.5 in one month!"
+              name="Fatima"
+              country="Nigeria"
+              countryEmoji="🇳🇬"
+              profileImage={fatima}
+            />
+            <TestimonialCard
+              content="I used to hate writing Task 2. Fluentli.ai's analysis showed me exactly where I was losing marks. Finally scored the 7.0 I needed."
+              name="Hassan"
+              country="Pakistan"
+              countryEmoji="🇵🇰"
+              profileImage={hassan}
+            />
+          </div>
+          
+          <div className="text-center">
+            <p className="text-muted-foreground mb-6">Trusted by students aiming for:</p>
+            <div className="flex flex-wrap justify-center items-center gap-6 opacity-60">
+              <span className="text-lg font-medium">University of Toronto</span>
+              <span className="text-lg font-medium">University of Melbourne</span>
+              <span className="text-2xl">🇬🇧 🇨🇦 🇦🇺</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* User Segmentation */}
+      <section className="py-16 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold font-inter text-center mb-16 gradient-text">
+            Choose Your Path to Success
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="glass border border-white/10 rounded-xl p-8 text-center hover:border-accent/30 transition-all group cursor-pointer">
+              <div className="w-16 h-16 rounded-lg bg-gradient-primary mx-auto mb-6 flex items-center justify-center group-hover:animate-float">
+                <GraduationCap className="w-8 h-8 text-primary-foreground" />
+              </div>
+              <h3 className="text-2xl font-semibold mb-4 gradient-text">For Ambitious Students</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Get your personal AI plan and start leveling up your IELTS score today.
+              </p>
+              <Button variant="cta" size="lg" className="w-full">
+                Start My Free Trial
+              </Button>
+            </div>
+            
+            <div className="glass border border-white/10 rounded-xl p-8 text-center hover:border-accent/30 transition-all group cursor-pointer">
+              <div className="w-16 h-16 rounded-lg bg-gradient-primary mx-auto mb-6 flex items-center justify-center group-hover:animate-float">
+                <Building2 className="w-8 h-8 text-primary-foreground" />
+              </div>
+              <h3 className="text-2xl font-semibold mb-4 gradient-text">For Tutors & Schools</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Empower your classroom with AI tools. Create custom classes, design tasks, and track student progress.
+              </p>
+              <Button variant="default" size="lg" className="w-full">
+                Request a Demo
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-20 bg-gradient-hero">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold font-inter mb-6 text-primary-foreground">
+            Your Dream University is Waiting.
+          </h2>
+          <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
+            Get your personal AI tutor and see your score improve in weeks.
+          </p>
+          <Button variant="cta" size="xl" className="text-xl px-12 py-6 h-auto">
+            Start Acing IELTS Today
+            <ArrowRight className="w-6 h-6" />
+          </Button>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <FAQ />
+
+      {/* Footer */}
+      <footer className="border-t border-white/10 py-8">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-muted-foreground">
+            © 2024 Fluentli.ai. Unlock your world with AI-powered IELTS preparation.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default LandingPage;
