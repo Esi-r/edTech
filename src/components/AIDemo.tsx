@@ -5,7 +5,7 @@ import { Modal, ModalContent, ModalHeader, ModalTitle, ModalDescription, ModalTr
 import { Sparkles, CheckCircle, Loader2 } from "lucide-react";
 
 const AIDemo = () => {
-  const [inputText, setInputText] = useState("I want to studying in abroad for my better future.");
+  const [inputText, setInputText] = useState("Some people think that students in high school should not waste their time studying literature, such as poems and novels. Do you agree?");
   const [email, setEmail] = useState("");
   const [showResult, setShowResult] = useState(false);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
