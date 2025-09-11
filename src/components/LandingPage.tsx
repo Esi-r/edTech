@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, X, Check, GraduationCap, Building2 } from "lucide-react";
+import { ChevronRight, X, Check, GraduationCap, Building2 } from "lucide-react";
 import FeatureCard from "./FeatureCard";
 import TestimonialCard from "./TestimonialCard";
 import AIDemo from "./AIDemo";
@@ -18,35 +18,39 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen bg-background text-foreground font-inter overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center">
+      <section className="relative min-h-screen flex items-center justify-center hero-bg-animated">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: `url(${heroBg})` }}
         />
         <div className="absolute inset-0 bg-gradient-hero opacity-80" />
         
+        {/* Animated Background Elements */}
+        <div className="circuit-trace" />
+        <div className="floating-orb w-24 h-24 bg-gradient-primary top-20 left-10" style={{ animationDelay: "0s" }} />
+        <div className="floating-orb w-20 h-20 bg-gradient-accent bottom-32 right-16" style={{ animationDelay: "2s" }} />
+        <div className="floating-orb w-16 h-16 bg-gradient-primary top-1/3 right-10" style={{ animationDelay: "4s" }} />
+        <div className="floating-orb w-32 h-32 bg-gradient-primary bottom-1/4 left-1/4" style={{ animationDelay: "1s" }} />
+        <div className="pulsing-brain w-48 h-48 bg-gradient-primary rounded-full" />
+        
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold font-inter mb-6 gradient-text animate-in fade-in duration-1000">
-            Ace IELTS. Unlock Your World.
+          <h1 className="text-5xl md:text-7xl font-bold font-inter mb-6 animate-in fade-in duration-1000">
+            <span className="text-white">Ace IELTS. </span>
+            <span className="text-neon-green">Unlock Your World.</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-in fade-in duration-1000 delay-200">
+          <p className="text-xl md:text-2xl text-gray-200 font-medium mb-8 animate-in fade-in duration-1000 delay-200">
             The smart, fun AI tutor that adapts to you. Stop guessing, start improving.
           </p>
           <div className="space-y-4 animate-in fade-in duration-1000 delay-400">
-            <Button variant="cta" size="xl" className="animate-pulse-glow">
+            <Button variant="cta" size="xl" className="bg-cta-neon hover:bg-cta-neon/90 text-gray-900 font-semibold animate-pulse-glow">
               Start Your Free Trial
-              <ArrowRight className="w-5 h-5" />
+              <ChevronRight className="w-5 h-5" />
             </Button>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-gray-300">
               ✨ Or try our AI in 15 seconds below!
             </p>
           </div>
         </div>
-        
-        {/* Floating elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-primary rounded-full opacity-60 animate-float" />
-        <div className="absolute bottom-32 right-16 w-16 h-16 bg-gradient-accent rounded-full opacity-50 animate-float" style={{ animationDelay: "2s" }} />
-        <div className="absolute top-1/3 right-10 w-12 h-12 bg-gradient-primary rounded-full opacity-40 animate-float" style={{ animationDelay: "4s" }} />
       </section>
 
       {/* AI Demo Section */}
@@ -207,9 +211,9 @@ const LandingPage = () => {
           <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
             Get your personal AI tutor and see your score improve in weeks.
           </p>
-          <Button variant="cta" size="xl" className="text-xl px-12 py-6 h-auto">
+          <Button variant="cta" size="xl" className="text-xl px-12 py-6 h-auto bg-cta-neon hover:bg-cta-neon/90 text-gray-900">
             Start Acing IELTS Today
-            <ArrowRight className="w-6 h-6" />
+            <ChevronRight className="w-6 h-6" />
           </Button>
         </div>
       </section>

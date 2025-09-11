@@ -24,6 +24,7 @@
     /* Neon Green for CTAs */
     --accent: 158 64% 52%; /* #34D399 - Neon Green */
     --accent-foreground: 222 47% 11%; /* Dark text on green */
+    --cta-neon: 158 64% 52%; /* Dedicated CTA neon color */
 
     /* Secondary greys for sections */
     --secondary: 215 28% 17%; /* #1F2937 - Slightly lighter grey */
@@ -54,6 +55,7 @@
     --shadow-glow: 0 0 40px hsla(239, 84%, 67%, 0.3);
     --shadow-accent-glow: 0 0 30px hsla(158, 64%, 52%, 0.4);
     --shadow-card: 0 8px 32px hsla(222, 47%, 11%, 0.8);
+    --shadow-brain-glow: 0 0 40px hsla(239, 84%, 67%, 0.2);
 
     /* Animation variables */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -149,6 +151,42 @@
     background-size: 200% 200%;
     animation: gradient-shift 4s ease infinite;
   }
+
+  /* Enhanced Hero Animations */
+  .text-neon-green {
+    color: hsl(var(--cta-neon));
+  }
+
+  .hero-bg-animated {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .floating-orb {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float-orb 8s ease-in-out infinite;
+  }
+
+  .pulsing-brain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    animation: pulse-brain 4s ease-in-out infinite;
+  }
+
+  .circuit-trace {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+    background: linear-gradient(45deg, transparent 49%, hsl(var(--primary)) 50%, transparent 51%);
+    background-size: 100px 100px;
+    animation: trace-flow 6s linear infinite;
+  }
 }
 
 /* Custom animations */
@@ -179,5 +217,47 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+/* Enhanced Hero Animations */
+@keyframes float-orb {
+  0%, 100% { 
+    transform: translate(0, 0) scale(1);
+    opacity: 0.6;
+  }
+  25% { 
+    transform: translate(20px, -30px) scale(1.1);
+    opacity: 0.8;
+  }
+  50% { 
+    transform: translate(-10px, -50px) scale(0.9);
+    opacity: 0.4;
+  }
+  75% { 
+    transform: translate(30px, -20px) scale(1.05);
+    opacity: 0.7;
+  }
+}
+
+@keyframes pulse-brain {
+  0%, 100% { 
+    opacity: 0.1; 
+    box-shadow: var(--shadow-brain-glow);
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% { 
+    opacity: 0.2; 
+    box-shadow: 0 0 60px hsla(239, 84%, 67%, 0.3);
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+@keyframes trace-flow {
+  0% { 
+    background-position: -200px 0; 
+  }
+  100% { 
+    background-position: 200px 0; 
   }
 }
