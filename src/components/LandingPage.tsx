@@ -43,20 +43,23 @@ const LandingPage = () => {
           <p className="text-xl md:text-2xl text-gray-200 font-medium mb-8 animate-in fade-in duration-1000 delay-200">
             The smart, fun AI tutor that adapts to you. Stop guessing, start improving.
           </p>
-          <div className="space-y-4 animate-in fade-in duration-1000 delay-400">
+          <div className="space-y-6 animate-in fade-in duration-1000 delay-400">
             <Button variant="cta" size="xl" className="bg-cta-neon hover:bg-cta-neon/90 text-gray-900 font-semibold animate-pulse-glow">
               Start Your Free Trial
               <ChevronRight className="w-5 h-5" />
             </Button>
-            <p className="text-sm text-gray-300">
+            <p className="text-sm text-gray-300 mb-8">
               ✨ Or try our AI in 15 seconds below!
             </p>
+            
+            {/* AI Demo moved into hero */}
+            <div className="max-w-2xl mx-auto mt-12 p-6 glass rounded-xl border border-white/10">
+              <AIDemo />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* AI Demo Section */}
-      <AIDemo />
 
       {/* Problem/Solution Section */}
       <section className="py-16">

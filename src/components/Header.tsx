@@ -33,12 +33,12 @@ const Header = () => {
 
           {/* Login/Account Section */}
           <div className="flex items-center space-x-3">
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-accent">
+            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground hover:bg-white/5 transition-colors">
               <LogIn className="w-4 h-4 mr-2" />
               Sign In
             </Button>
             <Button variant="cta" size="sm" className="bg-cta-neon hover:bg-cta-neon/90 text-gray-900">
-              Get Started
+              Start Your Free Trial
             </Button>
           </div>
         </div>
