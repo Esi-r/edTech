@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, X, Check, GraduationCap, Building2 } from "lucide-react";
+import Header from "./Header";
 import FeatureCard from "./FeatureCard";
 import TestimonialCard from "./TestimonialCard";
 import AIDemo from "./AIDemo";
@@ -17,8 +18,9 @@ import gameIcon from "@/assets/icon-game.png";
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-background text-foreground font-inter overflow-x-hidden">
+      <Header />
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center hero-bg-animated">
+      <section className="relative min-h-screen flex items-center justify-center hero-bg-animated pt-16">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: `url(${heroBg})` }}
