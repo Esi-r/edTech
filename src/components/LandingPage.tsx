@@ -9,6 +9,7 @@ import FAQ from "./FAQ";
 
 // Import generated images
 import heroBg from "@/assets/hero-bg.jpg";
+import heroVideoBg from "@/assets/hero-video-bg.jpg";
 import fatima from "@/assets/testimonial-fatima.jpg";
 import hassan from "@/assets/testimonial-hassan.jpg";
 import microphoneIcon from "@/assets/icon-microphone.png";
@@ -21,16 +22,25 @@ const LandingPage = () => {
       <Header />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center hero-bg-animated pt-20 pb-16">
+        {/* Dynamic Video-Style Background */}
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{ backgroundImage: `url(${heroBg})` }}
+          className="absolute inset-0 bg-cover bg-center animate-gradient"
+          style={{ 
+            backgroundImage: `url(${heroVideoBg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'brightness(0.4) contrast(1.2)'
+          }}
         />
-        <div className="absolute inset-0 bg-gradient-hero opacity-90" />
         
-        {/* Simplified Background Elements */}
-        <div className="floating-orb w-20 h-20 bg-gradient-primary/30 top-1/4 right-16" style={{ animationDelay: "0s" }} />
-        <div className="floating-orb w-16 h-16 bg-gradient-accent/20 bottom-1/3 left-20" style={{ animationDelay: "3s" }} />
-        <div className="pulsing-brain w-32 h-32 bg-gradient-primary/10 rounded-full" />
+        {/* Dark Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+        
+        {/* Enhanced Background Elements */}
+        <div className="floating-orb w-24 h-24 bg-gradient-primary/40 top-1/4 right-16 animate-pulse-glow" style={{ animationDelay: "0s" }} />
+        <div className="floating-orb w-20 h-20 bg-gradient-accent/30 bottom-1/3 left-20 animate-pulse-glow" style={{ animationDelay: "3s" }} />
+        <div className="floating-orb w-16 h-16 bg-neon-green/20 top-1/2 right-1/3 animate-pulse-glow" style={{ animationDelay: "6s" }} />
+        <div className="pulsing-brain w-40 h-40 bg-gradient-primary/15 rounded-full animate-pulse-glow" />
         
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto space-y-12">
           {/* Main Headlines */}
