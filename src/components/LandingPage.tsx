@@ -44,13 +44,6 @@ const LandingPage = () => {
             </p>
           </div>
 
-          {/* CTA Button */}
-          <div className="animate-in fade-in duration-1000 delay-300">
-            <Button variant="cta" size="xl" className="bg-cta-neon hover:bg-cta-neon/90 text-gray-900 font-semibold">
-              Start Your Free Trial
-              <ChevronRight className="w-5 h-5" />
-            </Button>
-          </div>
           
           {/* AI Demo Section */}
           <div className="animate-in fade-in duration-1000 delay-500">
