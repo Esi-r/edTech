@@ -20,41 +20,54 @@ const LandingPage = () => {
     <div className="min-h-screen bg-background text-foreground font-inter overflow-x-hidden">
       <Header />
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center hero-bg-animated pt-16">
+      <section className="relative min-h-screen flex items-center justify-center hero-bg-animated pt-20 pb-16">
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{ backgroundImage: `url(${heroBg})` }}
         />
-        <div className="absolute inset-0 bg-gradient-hero opacity-80" />
+        <div className="absolute inset-0 bg-gradient-hero opacity-90" />
         
-        {/* Animated Background Elements */}
-        <div className="circuit-trace" />
-        <div className="floating-orb w-24 h-24 bg-gradient-primary top-20 left-10" style={{ animationDelay: "0s" }} />
-        <div className="floating-orb w-20 h-20 bg-gradient-accent bottom-32 right-16" style={{ animationDelay: "2s" }} />
-        <div className="floating-orb w-16 h-16 bg-gradient-primary top-1/3 right-10" style={{ animationDelay: "4s" }} />
-        <div className="floating-orb w-32 h-32 bg-gradient-primary bottom-1/4 left-1/4" style={{ animationDelay: "1s" }} />
-        <div className="pulsing-brain w-48 h-48 bg-gradient-primary rounded-full" />
+        {/* Simplified Background Elements */}
+        <div className="floating-orb w-20 h-20 bg-gradient-primary/30 top-1/4 right-16" style={{ animationDelay: "0s" }} />
+        <div className="floating-orb w-16 h-16 bg-gradient-accent/20 bottom-1/3 left-20" style={{ animationDelay: "3s" }} />
+        <div className="pulsing-brain w-32 h-32 bg-gradient-primary/10 rounded-full" />
         
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold font-inter mb-6 animate-in fade-in duration-1000">
-            <span className="text-white">Ace IELTS. </span>
-            <span className="text-neon-green">Unlock Your World.</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-200 font-medium mb-8 animate-in fade-in duration-1000 delay-200">
-            The smart, fun AI tutor that adapts to you. Stop guessing, start improving.
-          </p>
-          <div className="space-y-6 animate-in fade-in duration-1000 delay-400">
-            <Button variant="cta" size="xl" className="bg-cta-neon hover:bg-cta-neon/90 text-gray-900 font-semibold animate-pulse-glow">
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto space-y-12">
+          {/* Main Headlines */}
+          <div className="space-y-6">
+            <h1 className="text-4xl md:text-6xl font-bold font-inter animate-in fade-in duration-1000">
+              <span className="text-white">Ace IELTS. </span>
+              <span className="text-neon-green">Unlock Your World.</span>
+            </h1>
+            <p className="text-lg md:text-xl text-gray-200 font-medium max-w-3xl mx-auto animate-in fade-in duration-1000 delay-200">
+              The smart, fun AI tutor that adapts to you. Stop guessing, start improving.
+            </p>
+          </div>
+
+          {/* CTA Button */}
+          <div className="animate-in fade-in duration-1000 delay-300">
+            <Button variant="cta" size="xl" className="bg-cta-neon hover:bg-cta-neon/90 text-gray-900 font-semibold">
               Start Your Free Trial
               <ChevronRight className="w-5 h-5" />
             </Button>
-            <p className="text-sm text-gray-300 mb-8">
-              ✨ Or try our AI in 15 seconds below!
-            </p>
-            
-            {/* AI Demo moved into hero */}
-            <div className="max-w-2xl mx-auto mt-12 p-6 glass rounded-xl border border-white/10">
-              <AIDemo />
+          </div>
+          
+          {/* AI Demo Section */}
+          <div className="animate-in fade-in duration-1000 delay-500">
+            <div className="max-w-4xl mx-auto space-y-8">
+              <div className="text-center">
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+                  Try it now! ✨
+                </h2>
+                <p className="text-gray-300 text-lg">
+                  Can our AI improve your writing in 15 seconds?
+                </p>
+              </div>
+              
+              {/* Clean AI Demo Container */}
+              <div className="glass border border-white/20 rounded-2xl p-8 max-w-3xl mx-auto bg-white/5">
+                <AIDemo />
+              </div>
             </div>
           </div>
         </div>
