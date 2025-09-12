@@ -23,7 +23,7 @@ import schoolIcon3D from "@/assets/icon-school-3d.png";
 // Import animated demo mockups
 import speakingPracticeGif from "@/assets/gif-speaking-practice.png";
 import writingPracticeLaptop from "@/assets/gif-writing-practice-laptop.png";
-import gameQuizGif from "@/assets/gif-game-quiz.png";
+import gameQuizClean from "@/assets/gif-game-quiz-clean.png";
 
 const LandingPage = () => {
   return (
@@ -154,7 +154,7 @@ const LandingPage = () => {
               icon={gameIcon3D}
               title="Learn Like You Play"
               description="Level up your skills with fun, adaptive tasks. Always challenging, never boring."
-              gif={gameQuizGif}
+              gif={gameQuizClean}
             />
           </div>
         </div>
