@@ -86,33 +86,33 @@ const LandingPage = () => {
               <h3 className="text-2xl font-semibold mb-6 text-red-400">The Old Way</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <X className="w-6 h-6 text-red-500 flex-shrink-0" />
+                  <span className="text-2xl flex-shrink-0">❌</span>
                   <span>Boring Textbooks</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <X className="w-6 h-6 text-red-500 flex-shrink-0" />
+                  <span className="text-2xl flex-shrink-0">❌</span>
                   <span>Expensive Tutors</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <X className="w-6 h-6 text-red-500 flex-shrink-0" />
+                  <span className="text-2xl flex-shrink-0">❌</span>
                   <span>Vague Feedback</span>
                 </div>
               </div>
             </div>
             
-            <div className="glass border border-accent/30 rounded-xl p-8 text-center">
+            <div className="glass border border-accent/30 rounded-xl p-8 text-center relative overflow-hidden animate-pulse-glow shadow-[0_0_40px_rgba(79,70,229,0.3),0_0_60px_rgba(124,58,237,0.2)] hover:shadow-[0_0_50px_rgba(79,70,229,0.4),0_0_80px_rgba(124,58,237,0.3)] transition-all duration-1000">
               <h3 className="text-2xl font-semibold mb-6 text-accent">The Fluentli.ai Way</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <Check className="w-6 h-6 text-accent flex-shrink-0" />
+                  <span className="text-2xl flex-shrink-0">✅</span>
                   <span>Fun, Daily AI Tasks</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Check className="w-6 h-6 text-accent flex-shrink-0" />
+                  <span className="text-2xl flex-shrink-0">✅</span>
                   <span>Your 24/7 AI Tutor</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Check className="w-6 h-6 text-accent flex-shrink-0" />
+                  <span className="text-2xl flex-shrink-0">✅</span>
                   <span>Instant, Clear Analysis</span>
                 </div>
               </div>
