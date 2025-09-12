@@ -22,7 +22,7 @@ import schoolIcon3D from "@/assets/icon-school-3d.png";
 
 // Import animated demo mockups
 import speakingPracticeGif from "@/assets/gif-speaking-practice.png";
-import writingPracticeGif from "@/assets/gif-writing-practice.png";
+import writingPracticeLaptop from "@/assets/gif-writing-practice-laptop.png";
 import gameQuizGif from "@/assets/gif-game-quiz.png";
 
 const LandingPage = () => {
@@ -148,7 +148,7 @@ const LandingPage = () => {
               icon={writingIcon3D}
               title="Write Perfect Essays"
               description="Our AI checks your writing for grammar and vocabulary, giving you a report in seconds."
-              gif={writingPracticeGif}
+              gif={writingPracticeLaptop}
             />
             <FeatureCard
               icon={gameIcon3D}
