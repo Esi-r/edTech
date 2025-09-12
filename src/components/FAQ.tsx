@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { cn } from "@/lib/utils";
 
 const FAQ = () => {
   const faqs = [
@@ -33,7 +34,11 @@ const FAQ = () => {
           <div className="glass border border-white/10 rounded-xl p-6">
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border-b border-white/10">
+                <AccordionItem 
+                  key={index} 
+                  value={`item-${index}`} 
+                  className="border-b border-white/10 data-[state=open]:bg-[#1F2937] data-[state=open]:rounded-lg data-[state=open]:px-4 data-[state=open]:py-2 transition-all duration-200"
+                >
                   <AccordionTrigger className="text-left font-medium text-foreground hover:text-accent">
                     {faq.question}
                   </AccordionTrigger>

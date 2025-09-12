@@ -17,6 +17,8 @@ import hassan from "@/assets/testimonial-hassan.jpg";
 import microphoneIcon3D from "@/assets/icon-microphone-3d.png";
 import writingIcon3D from "@/assets/icon-writing-3d.png";
 import gameIcon3D from "@/assets/icon-game-3d.png";
+import graduationIcon3D from "@/assets/icon-graduation-3d.png";
+import schoolIcon3D from "@/assets/icon-school-3d.png";
 
 // Import animated demo mockups
 import speakingPracticeGif from "@/assets/gif-speaking-practice.png";
@@ -202,8 +204,12 @@ const LandingPage = () => {
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="glass border border-white/10 rounded-xl p-8 text-center hover:border-accent/30 transition-all group cursor-pointer">
-              <div className="w-16 h-16 rounded-lg bg-gradient-primary mx-auto mb-6 flex items-center justify-center group-hover:animate-float">
-                <GraduationCap className="w-8 h-8 text-primary-foreground" />
+              <div className="w-20 h-20 rounded-lg bg-gradient-primary mx-auto mb-6 flex items-center justify-center group-hover:animate-float p-4">
+                <img 
+                  src={graduationIcon3D} 
+                  alt="Graduation Cap" 
+                  className="w-full h-full object-contain drop-shadow-lg"
+                />
               </div>
               <h3 className="text-2xl font-semibold mb-4 gradient-text">For Ambitious Students</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -215,8 +221,12 @@ const LandingPage = () => {
             </div>
             
             <div className="glass border border-white/10 rounded-xl p-8 text-center hover:border-accent/30 transition-all group cursor-pointer">
-              <div className="w-16 h-16 rounded-lg bg-gradient-primary mx-auto mb-6 flex items-center justify-center group-hover:animate-float">
-                <Building2 className="w-8 h-8 text-primary-foreground" />
+              <div className="w-20 h-20 rounded-lg bg-gradient-primary mx-auto mb-6 flex items-center justify-center group-hover:animate-float p-4">
+                <img 
+                  src={schoolIcon3D} 
+                  alt="School Building" 
+                  className="w-full h-full object-contain drop-shadow-lg"
+                />
               </div>
               <h3 className="text-2xl font-semibold mb-4 gradient-text">For Tutors & Schools</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
