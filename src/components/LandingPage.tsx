@@ -65,7 +65,7 @@ const LandingPage = () => {
               </div>
               
               {/* Glassmorphism AI Demo Container */}
-              <div className="border border-white/10 rounded-2xl p-8 max-w-3xl mx-auto backdrop-blur-2xl bg-secondary/80 supports-[backdrop-filter]:bg-secondary/80">
+              <div className="border border-white/10 rounded-2xl p-8 max-w-3xl mx-auto backdrop-blur-md bg-white/5 supports-[backdrop-filter]:bg-white/5 shadow-2xl">
                 <AIDemo />
               </div>
             </div>
