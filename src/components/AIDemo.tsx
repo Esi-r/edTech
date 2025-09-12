@@ -63,6 +63,19 @@ const AIDemo = () => {
     }, 500);
   };
 
+  const handleModalClose = (open: boolean) => {
+    setModalOpen(open);
+    
+    // If modal is being closed and no result is shown, reset to original state
+    if (!open && !showResult) {
+      setShowAnalysisCategories(false);
+      setAnalysisStep(0);
+      setButtonLoading(false);
+      setTextAnimating(false);
+      setEmail("");
+    }
+  };
+
   return (
     <div className="space-y-6">
       <div className="space-y-8">
@@ -128,7 +141,7 @@ const AIDemo = () => {
         )}
 
         {/* Email Capture Modal */}
-        <Modal open={modalOpen} onOpenChange={setModalOpen}>
+        <Modal open={modalOpen} onOpenChange={handleModalClose}>
           <ModalContent className="backdrop-blur-2xl bg-background/80 border border-white/10">
             <ModalHeader>
               <div className="flex justify-center mb-4">
