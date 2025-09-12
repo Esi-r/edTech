@@ -147,7 +147,7 @@ const LandingPage = () => {
             <FeatureCard
               icon={writingIcon3D}
               title="Write Perfect Essays"
-              description="Our AI checks your writing for grammar, structure, and vocabulary, giving you a detailed report in seconds."
+              description="Our AI checks your writing for grammar and vocabulary, giving you a report in seconds."
               gif={writingPracticeGif}
             />
             <FeatureCard
