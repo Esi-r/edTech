@@ -12,9 +12,16 @@ import heroBg from "@/assets/hero-bg.jpg";
 import heroVideoBg from "@/assets/hero-video-bg.jpg";
 import fatima from "@/assets/testimonial-fatima.jpg";
 import hassan from "@/assets/testimonial-hassan.jpg";
-import microphoneIcon from "@/assets/icon-microphone.png";
-import writingIcon from "@/assets/icon-writing.png";
-import gameIcon from "@/assets/icon-game.png";
+
+// Import 3D icons
+import microphoneIcon3D from "@/assets/icon-microphone-3d.png";
+import writingIcon3D from "@/assets/icon-writing-3d.png";
+import gameIcon3D from "@/assets/icon-game-3d.png";
+
+// Import animated demo mockups
+import speakingPracticeGif from "@/assets/gif-speaking-practice.png";
+import writingPracticeGif from "@/assets/gif-writing-practice.png";
+import gameQuizGif from "@/assets/gif-game-quiz.png";
 
 const LandingPage = () => {
   return (
@@ -122,27 +129,30 @@ const LandingPage = () => {
       </section>
 
       {/* Feature Showcase */}
-      <section className="py-16 bg-secondary/30">
+      <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold font-inter text-center mb-16 gradient-text">
+          <h2 className="text-3xl md:text-4xl font-bold font-inter text-center mb-20 gradient-text">
             Your Personal AI Genie, Unbottled.
           </h2>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-12 max-w-7xl mx-auto">
             <FeatureCard
-              icon={microphoneIcon}
+              icon={microphoneIcon3D}
               title="Speak with Confidence"
               description="Practice with our AI 24/7. It analyzes your pronunciation, fluency, and vocabulary with zero judgment."
+              gif={speakingPracticeGif}
             />
             <FeatureCard
-              icon={writingIcon}
+              icon={writingIcon3D}
               title="Write Perfect Essays"
               description="Our AI checks your writing for grammar, structure, and vocabulary, giving you a detailed report in seconds."
+              gif={writingPracticeGif}
             />
             <FeatureCard
-              icon={gameIcon}
+              icon={gameIcon3D}
               title="Learn Like You Play"
               description="Level up your skills with fun, adaptive tasks. Always challenging, never boring."
+              gif={gameQuizGif}
             />
           </div>
         </div>
