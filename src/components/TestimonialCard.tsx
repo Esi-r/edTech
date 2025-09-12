@@ -21,9 +21,14 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 }) => {
   return (
     <div className={cn(
-      "glass border border-white/10 rounded-xl p-6 hover:border-white/20 transition-all duration-300 group",
+      "border border-white/20 rounded-xl p-6 hover:border-white/30 transition-all duration-300 group backdrop-blur-xl shadow-xl hover:shadow-2xl",
       className
-    )}>
+    )}
+    style={{
+      backgroundColor: 'rgba(31, 41, 55, 0.8)',
+      backdropFilter: 'blur(12px)',
+      WebkitBackdropFilter: 'blur(12px)'
+    }}>
       <div className="flex flex-col space-y-4">
         {/* Stars */}
         <div className="flex space-x-1">
