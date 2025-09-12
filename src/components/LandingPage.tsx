@@ -230,7 +230,7 @@ const LandingPage = () => {
               </div>
               <h3 className="text-2xl font-semibold mb-4 gradient-text">For Tutors & Schools</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Empower your classroom with AI tools. Create custom classes, design tasks, and track student progress.
+                Empower your classroom with AI tools. Create classes, design tasks, and track progress.
               </p>
               <Button variant="default" size="lg" className="w-full">
                 Request a Demo
