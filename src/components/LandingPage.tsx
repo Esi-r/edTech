@@ -42,7 +42,7 @@ const LandingPage = () => {
         <div className="floating-orb w-16 h-16 bg-neon-green/20 top-1/2 right-1/3 animate-pulse-glow" style={{ animationDelay: "6s" }} />
         <div className="pulsing-brain w-40 h-40 bg-gradient-primary/15 rounded-full animate-pulse-glow" />
         
-        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto space-y-12">
+        <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto space-y-8 sm:space-y-12">
           {/* Main Headlines */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold font-inter animate-in fade-in duration-1000">
@@ -65,7 +65,7 @@ const LandingPage = () => {
               </div>
               
               {/* Glassmorphism AI Demo Container */}
-              <div className="border border-white/10 rounded-2xl p-8 max-w-3xl mx-auto backdrop-blur-md bg-white/5 supports-[backdrop-filter]:bg-white/5 shadow-2xl">
+              <div className="border border-white/10 rounded-2xl p-4 sm:p-6 md:p-8 max-w-3xl mx-auto backdrop-blur-md bg-white/5 supports-[backdrop-filter]:bg-white/5 shadow-2xl">
                 <AIDemo />
               </div>
             </div>
